@@ -11,13 +11,13 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html#about">О Седоне</a>
           </li>
           <li class="navigation-item active">
-            <a class="navigation-link" href="/catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -41,7 +41,7 @@
       <h1>Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="../">
+          <a class="breadcrumbs-link" href="index.html">
             <span class="visually-hidden">Главная страница</span>
           </a>
         </li>
@@ -55,19 +55,19 @@
             <ul class="filter-list">
               <li class="filter-item">
                 <label for="pool">
-                  <input type="checkbox" name="infrastructure" id="pool" checked>
+                  <input type="checkbox" name="pool" checked>
                   Бассейн
                 </label>
               </li>
               <li class="filter-item">
                 <label for="parking">
-                  <input type="checkbox" name="infrastructure" id="parking" checked>
+                  <input type="checkbox" name="parking" checked>
                   Парковка
                 </label>
               </li>
               <li class="filter-item">
                 <label for="wifi">
-                  <input type="checkbox" name="infrastructure" id="wifi">
+                  <input type="checkbox" name="wifi">
                   Wi-Fi
                 </label>
               </li>
@@ -78,19 +78,19 @@
             <ul class="filter-list">
               <li class="filter-item">
                 <label for="hotel">
-                  <input type="radio" name="accommodation" id="hotel" value="hotel" checked required>
+                  <input type="radio" name="accommodation" value="hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="filter-item">
                 <label for="motel">
-                  <input type="radio" name="accommodation" id="motel" value="motel">
+                  <input type="radio" name="accommodation" value="motel">
                   Мотель
                 </label>
               </li>
               <li class="filter-item">
                 <label for="apartament">
-                  <input type="radio" name="accommodation" id="apartament" value="apartment">
+                  <input type="radio" name="accommodation" value="apartment">
                   Апартаменты
                 </label>
               </li>
@@ -143,7 +143,7 @@
               <span class="result-accommodation">Гостиница</span>
               <span class="result-price_range">От 4000 ₽</span>
               <button class="result-details" type="button">Подробнее</button>
-              <button class="result-add_to_favorites" type="button">В избранное</button>
+              <button class="result-add_to_favourites" type="button">В избранное</button>
               <div class="result-star_rating">
                 <span class="visually-hidden">4 звезды</span>
               </div>
@@ -155,7 +155,7 @@
               <span class="result-accommodation">Гостиница</span>
               <span class="result-price_range">От 3000 ₽</span>
               <button class="result-details" type="button">Подробнее</button>
-              <button class="result-add_to_favorites" type="button">В избранное</button>
+              <button class="result-add_to_favourites" type="button">В избранное</button>
               <div class="result-star_rating">
                 <span class="visually-hidden">3 звезды</span>
               </div>
@@ -167,7 +167,7 @@
               <span class="result-accommodation">Гостиница</span>
               <span class="result-price_range">От 2000 ₽</span>
               <button class="result-details" type="button">Подробнее</button>
-              <button class="result-add_to_favorites" type="button">В избранное</button>
+              <button class="result-add_to_favourites" type="button">В избранное</button>
               <div class="result-star_rating">
                 <span class="visually-hidden">2 звезды</span>
               </div>
@@ -179,15 +179,15 @@
               <span class="result-accommodation">Гостиница</span>
               <span class="result-price_range">От 3000 ₽</span>
               <button class="result-details" type="button">Подробнее</button>
-              <button class="result-add_to_favorites" type="button">В избранное</button>
+              <button class="result-add_to_favourites" type="button">В избранное</button>
               <div class="result-star_rating">
                 <span class="visually-hidden">2 звезды</span>
               </div>
               <div class="result-rating">Рейтинг: 9,2</div>
             </li>
           </ul>
+          <button class="result-load_more-button" type="button">Загрузить ещё</button>
         </section>
-        <button class="result-load_more-button" type="button">Загрузить ещё</button>
         <section class="result-pagination">
           <h3 class="visually-hidden">Номер страницы:</h3>
           <button type="button" class="page-number active">1<span class="visually-hidden"> (вы тут)</span></button>
@@ -210,10 +210,10 @@
       <section class="catalog-subscription">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="email" placeholder="Ваш e-mail" required>
-            <button type="submit" class="subscription-button">Подписаться</button>
-          </form>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" name="email" placeholder="Ваш e-mail" required>
+          <button type="submit" class="subscription-button">Подписаться</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
