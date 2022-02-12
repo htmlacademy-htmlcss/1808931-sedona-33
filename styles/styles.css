@@ -141,25 +141,25 @@ body {
 
 /*titles start*/
 
-.title-1 {
+.title-big {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
-.title-2 {
+.title-medium {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
 }
 
-.title-3 {
+.title-small {
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
 }
 
-.title-4 {
+.title-tiny {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -538,36 +538,36 @@ body {
   background-position: 0;
 }
 
-.star-2 {
   background-image: url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg);
+.star-two {
   background-repeat: no-repeat, no-repeat;
   background-position: 0, 28px;
 }
 
-.star-3 {
   background-image: url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg);
+.star-three {
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 0, 28px, 56px;
 }
 
-.star-4 {
   background-image: url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg);
+.star-four {
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 0, 28px, 56px, 84px;
 }
 
-.star-5 {
   background-image: url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg),
                     url(/images/interface/interface-star.svg);
+.star-five {
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 0, 28px, 56px, 84px, 112px;
 }
