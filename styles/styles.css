@@ -229,16 +229,16 @@ body {
 }
 
 .main-hotel-button {
-    width: 575px;
-    height: 60px;
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 10px;
+  width: 575px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
   background-color: rgba(var(--brown-light));
+  border: none;
+  border-radius: 10px;
 }
 
 .main-hotel-button:hover {
@@ -609,8 +609,8 @@ body {
 }
 
 .result-more-button:active {
-color: #ffffff30;
   background-color: rgba(var(--blue-dark));
+  color: #ffffff30;
 }
 
 .page-number-button {
@@ -627,13 +627,13 @@ color: #ffffff30;
 }
 
 .page-number-button:hover {
-  }
   background-color: rgba(var(--blue-dark));
+}
 
 .page-number-button:focus {
-  }
   background-color: rgba(var(--blue-dark));
   border: 3px solid rgba(var(--brown-light));
+}
 
 .page-number-button:active {
   background-color: #F2F2F2;
