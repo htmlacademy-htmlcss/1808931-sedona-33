@@ -262,12 +262,12 @@ body {
   background-size: cover;
 }
 
-.subscription-form input{
+.subscription-email {
   font-size: 18px;
   line-height: 26px;
 }
 
-.subscription-form button {
+.subscription-button {
   width: 200px;
   height: 60px;
   font-size: 20px;
@@ -280,16 +280,16 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
-.subscription-form button:hover {
+.subscription-button:hover {
   background-color: rgba(var(--blue-dark));
 }
 
-.subscription-form button:focus {
+.subscription-button:focus {
   background-color: rgba(var(--blue-dark));
   border: 3px solid rgba(var(--brown-light));
 }
 
-.subscription-form button:active {
+.subscription-button:active {
   color: #ffffff30;
   background-color: rgba(var(--blue-dark));
   border: none;
@@ -306,9 +306,12 @@ body {
   font-size: 18px;
   line-height: 23px;
 }
-  font-size: 18px;
-  line-height: 23px;
 
+.price-input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
 }
 
 .breadcrumbs {
