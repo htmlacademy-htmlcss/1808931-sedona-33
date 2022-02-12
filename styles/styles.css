@@ -20,6 +20,7 @@
   --green-light: 125, 181, 79;
   --green-dark: 108, 158, 66
 }
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -54,6 +55,7 @@ body {
   text-decoration: none;
   color: #000;
 }
+
 
 .navigation-link:hover {
   color: #756257;
@@ -295,16 +297,16 @@ body {
 
 /*catalog start*/
 
-.catalog-filter{
+.catalog-filter {
   color: #fff;
   background: url(/images/catalog/catalog-background.jpg) no-repeat;
   background-size: cover;
   font-size: 18px;
   line-height: 23px;
 }
-.catalog-filter input{
   font-size: 18px;
   line-height: 23px;
+
 }
 
 .breadcrumbs {
@@ -634,7 +636,7 @@ color: #ffffff30;
 .page-number-button:active {
   background-color: #F2F2F2;
   color: #000;
-  }
+}
 
 .page-number-button:disabled {
   background-color: #F2F2F2;
