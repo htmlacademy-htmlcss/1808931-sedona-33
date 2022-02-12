@@ -535,44 +535,55 @@ body {
   color: #ffffff30;
 }
 
-.star-1 {
-  background-image: url(/images/interface/interface-star.svg);
+.result-star_rating{
+  --star-url: url(/images/interface/interface-star.svg);
+  --star-width: 18px;
+  --star-space: 10px;
+  --star: calc(var(--star-width) + var(--star-space));
+  --star-block-width: calc(var(--star-width)*5 + var(--star-space)*4);
+
+  width: var(--star-block-width);
+  height: 17px;
+}
+
+.star-one {
+  background-image: var(--star-url);
   background-repeat: no-repeat;
   background-position: 0;
 }
 
-  background-image: url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg);
 .star-two {
+  background-image: var(--star-url),
+                    var(--star-url);
   background-repeat: no-repeat, no-repeat;
-  background-position: 0, 28px;
+  background-position: 0, var(--star);
 }
 
-  background-image: url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg);
 .star-three {
+  background-image: var(--star-url),
+                    var(--star-url),
+                    var(--star-url);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0, 28px, 56px;
+  background-position: 0, var(--star), calc(var(--star)*2);
 }
 
-  background-image: url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg);
 .star-four {
+  background-image: var(--star-url),
+                    var(--star-url),
+                    var(--star-url),
+                    var(--star-url);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 0, 28px, 56px, 84px;
+  background-position: 0, var(--star), calc(var(--star)*2), calc(var(--star)*3);
 }
 
-  background-image: url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg),
-                    url(/images/interface/interface-star.svg);
 .star-five {
+  background-image: var(--star-url),
+                    var(--star-url),
+                    var(--star-url),
+                    var(--star-url),
+                    var(--star-url);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 0, 28px, 56px, 84px, 112px;
+  background-position: 0, var(--star), calc(var(--star)*2), calc(var(--star)*3), calc(var(--star)*4);
 }
 
 .result-rating {
