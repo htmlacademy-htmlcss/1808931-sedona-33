@@ -12,6 +12,14 @@
   src: url("/fonts/ptsans-700.woff2") format("woff2");
 }
 
+:root {
+  --blue-light: 131, 179, 211;
+  --blue-dark: 104, 162, 202;
+  --brown-light: 117, 98, 87;
+  --brown-dark: 97, 80, 72;
+  --green-light: 125, 181, 79;
+  --green-dark: 108, 158, 66
+}
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
