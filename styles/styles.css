@@ -56,13 +56,16 @@ body {
   color: #000;
 }
 
+.navigation-active {
+  border-bottom: 2px solid rgba(var(--brown-light));;
+}
 
 .navigation-link:hover {
-  color: #756257;
+  color: rgba(var(--brown-light));
 }
 
 .navigation-link:active {
-  color: #75625730;
+  color: rgba(var(--brown-light), 0.3);
 }
 
 .search-button {
