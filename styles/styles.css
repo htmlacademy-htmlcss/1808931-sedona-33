@@ -1,26 +1,3 @@
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-style: normal;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
-}
-
-:root {
-  --blue-light: 131, 179, 211;
-  --blue-dark: 104, 162, 202;
-  --brown-light: 117, 98, 87;
-  --brown-dark: 97, 80, 72;
-  --green-light: 125, 181, 79;
-  --green-dark: 108, 158, 66
-}
-
 html, body {
   height: 100%;
 }
@@ -884,12 +861,6 @@ h1, h2, h3, h4 {
 }
 
 .result-star_rating{
-  --star-url: url(/images/interface/interface-star.svg);
-  --star-width: 18px;
-  --star-space: 7px;
-  --star: calc(var(--star-width) + var(--star-space));
-  --star-block-width: calc(var(--star-width)*5 + var(--star-space)*4);
-
   width: var(--star-block-width);
   height: 17px;
 }
@@ -1196,8 +1167,6 @@ h1, h2, h3, h4 {
 }
 
 .academy-link {
-  --academy-pic: url(/images/academy/htmlacademy.svg);
-  --academy-pic-hover: url(/images/academy/htmlacademy-hover.svg);
   display: block;
   height: 70px;
   width: 160px;
