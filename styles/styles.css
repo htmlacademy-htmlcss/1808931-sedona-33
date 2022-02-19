@@ -260,8 +260,8 @@ h1, h2, h3, h4 {
 }
 
 .about-title {
+  width: 720px;
   line-height: 36px;
-  margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
@@ -319,7 +319,8 @@ h1, h2, h3, h4 {
 
 .advantages-title,
 .sub-item-title {
-  width: 100%;
+  margin: 0 auto;
+  width: 180px;
   line-height: 28px;
   text-transform: uppercase;
 }
@@ -357,7 +358,7 @@ h1, h2, h3, h4 {
 
 .advantages-description {
   margin: 0 auto;
-  width: 250px;
+  width: 240px;
 }
 
 .pic-description {
@@ -422,8 +423,9 @@ h1, h2, h3, h4 {
 }
 
 .subscription-text {
-  width: 720px;
-  margin: 29px auto 46px auto;
+  width: 500px;
+
+  margin: 29px auto 46px;
 }
 
 .subscription-form {
@@ -1065,7 +1067,7 @@ h1, h2, h3, h4 {
 }
 
 .catalog-subscription-text {
-  width: 720px;
+  width: 500px;
   margin: 46px auto;
 }
 
