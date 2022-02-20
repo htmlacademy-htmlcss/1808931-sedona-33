@@ -1,0 +1,36 @@
+:root {
+  /*colors*/
+
+  --blue-light: rgb(131, 179, 211);
+  --blue-light-30: rgba(131, 179, 211, 0.3);
+  --blue-light-20: rgba(131, 179, 211, 0.2);
+  --blue-light-12: rgba(131, 179, 211, 0.12);
+  --blue-dark: rgb(104, 162, 202);
+  --brown-light: rgb(117, 98, 87);
+  --brown-light-30: rgba(117, 98, 87, 0.3);
+  --brown: rgb(117, 97, 87);
+  --brown-dark: rgb(97, 80, 72);
+  --green-light: rgb(125, 181, 80);
+  --green: rgb(125, 181, 79);
+  --green-dark: rgb(108, 158, 66);
+  --white: rgb(255, 255, 255);
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --black: rgb(0, 0, 0);
+  --grey: rgb(230, 230, 230);
+  --grey-light: rgb(242, 242, 242);
+  --grey-dark: rgb(229, 229, 229);
+
+  /*star rating*/
+
+  --star-url: url(/images/interface/interface-star.svg);
+  --star-width: 18px;
+  --star-space: 7px;
+  --star: calc(var(--star-width) + var(--star-space));
+  --star-block-width: calc(var(--star-width)*5 + var(--star-space)*4);
+
+  /*academy footer pic*/
+
+  --academy-pic: url(/images/academy/htmlacademy.svg);
+  --academy-pic-hover: url(/images/academy/htmlacademy-hover.svg);
+}
