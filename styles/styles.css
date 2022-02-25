@@ -784,6 +784,28 @@ h1, h2, h3, h4 {
   box-sizing: border-box;
 }
 
+.result-image-container {
+  display: block;
+  width: 300px;
+  height: 206px;
+}
+
+.result-image-container:hover {
+  opacity: 60%;
+}
+
+.result-image-container:focus {
+  border: 3px solid var(--blue-light);
+}
+
+.result-image-container:active {
+  opacity: 30%;
+}
+
+.result-image {
+  object-fit: cover;
+}
+
 .result-title {
   width: 100%;
 }
