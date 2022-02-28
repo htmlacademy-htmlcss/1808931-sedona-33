@@ -15,10 +15,6 @@ body {
   background-color: var(--white);
 }
 
-button {
-  padding: 0;
-}
-
 .main-container {
   flex-grow: 1;
 }
@@ -73,10 +69,9 @@ h1, h2, h3, h4 {
 .navigation {
   display: flex;
   box-sizing: border-box;
-  gap: 30px;
   min-height: 65px;
   width: 1060px;
-  margin: 0 auto;
+  margin: 0 70px;
   padding: 0;
 }
 
@@ -88,19 +83,24 @@ h1, h2, h3, h4 {
   list-style: none;
 }
 
-.navigation-menu {
-  margin-right: auto;
-  column-gap: 34px;
-  padding: 0 17px;
-}
-
 .header-logo {
   height: 65px;
   position: relative;
   z-index: 1;
 }
 
-.navigation-item {
+.navigation-menu {
+  margin-right: auto;
+  margin-left: 30px;
+  padding: 0 17px;
+}
+
+.navigation-menu-item {
+  max-height: 66px;
+}
+
+.navigation-menu-item:not(:first-child) {
+  margin-left: 34px;
   max-height: 66px;
 }
 
@@ -135,7 +135,7 @@ h1, h2, h3, h4 {
 }
 
 .search-button {
-  width: 42px;
+  min-width: 42px;
   height: 65px;
   padding: 0;
   background-image: url(/images/interface/interface-search.svg);
@@ -155,8 +155,8 @@ h1, h2, h3, h4 {
 }
 
 .bookmarks-button {
-  color: var(--white);
-  width: 42px;
+  padding: 0;
+  min-width: 42px;
   height: 65px;
   background: url(/images/interface/interface-heart.svg) no-repeat 50% 50%;
   border: none;
@@ -172,9 +172,11 @@ h1, h2, h3, h4 {
 }
 
 .bookmarks-button::after {
+  color: var(--white);
   content: "12";
   display: block;
   margin: 0;
+  padding: 0;
   text-align: center;
   position: relative;
   top: -8px;
@@ -189,7 +191,8 @@ h1, h2, h3, h4 {
 }
 
 .some-button {
-  width: 160px;
+  padding: 0;
+  min-width: 160px;
   height: 37px;
   font-size: 14px;
   line-height: 20px;
@@ -363,7 +366,8 @@ h1, h2, h3, h4 {
 }
 
 .main-hotel-button {
-  width: 575px;
+  padding: 0;
+  min-width: 575px;
   height: 60px;
   font-size: 18px;
   line-height: 36px;
@@ -443,6 +447,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
   color: var(--white);
   background-color: var(--blue-light);
   border: none;
@@ -623,6 +628,7 @@ h1, h2, h3, h4 {
 .filter-submit {
   width: 160px;
   height: 48px;
+  padding: 0;
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 21px;
@@ -650,6 +656,7 @@ h1, h2, h3, h4 {
 }
 
 .filter-reset {
+  padding: 0;
   width: 100px;
   height: 32px;
   font-size: 16px;
@@ -716,7 +723,8 @@ h1, h2, h3, h4 {
 }
 
 .display-option-button {
-  width: 48px;
+  padding: 0;
+  min-width: 48px;
   height: 48px;
   background: none;
   border: 2px solid var(--grey);
@@ -755,12 +763,13 @@ h1, h2, h3, h4 {
 }
 
 .result-list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 10px;
-  justify-content: space-between;
-  padding: 53px 0 34px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 10px 18px;
+  padding: 0;
   margin: 0;
+  padding-top: 53px;
+  margin-bottom: 34px;
   list-style: none;
 }
 
@@ -770,10 +779,31 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
-  height: 438px;
-  width: 340px;
+  min-height: 438px;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.result-image-container {
+  display: block;
+  width: 300px;
+  height: 206px;
+}
+
+.result-image-container:hover {
+  opacity: 60%;
+}
+
+.result-image-container:focus {
+  border: 3px solid var(--blue-light);
+}
+
+.result-image-container:active {
+  opacity: 30%;
+}
+
+.result-image {
+  object-fit: cover;
 }
 
 .result-title {
@@ -789,6 +819,7 @@ h1, h2, h3, h4 {
 
 .result-details-button,
 .result-favorites-button {
+  padding: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -799,7 +830,7 @@ h1, h2, h3, h4 {
 }
 
 .result-details-button {
-  width: 133px;
+  min-width: 133px;
   height: 37px;
   background-color: var(--brown-light);
 }
@@ -819,7 +850,7 @@ h1, h2, h3, h4 {
 }
 
 .result-favorites-button {
-  width: 141px;
+  min-width: 141px;
   height: 37px;
   background-color: var(--blue-light);
 }
@@ -840,7 +871,7 @@ h1, h2, h3, h4 {
 }
 
 .result-favorites-button.favourite {
-  width: 141px;
+  min-width: 141px;
   height: 37px;
   background-color: var(--green);
 }
@@ -925,7 +956,8 @@ h1, h2, h3, h4 {
 }
 
 .result-more-button {
-  width: 620px;
+  padding: 0;
+  min-width: 620px;
   height: 60px;
   font-size: 18px;
   line-height: 26px;
@@ -965,7 +997,8 @@ h1, h2, h3, h4 {
 }
 
 .pagination-button {
-  width: 55px;
+  padding: 0;
+  min-width: 55px;
   height: 55px;
   font-size: 20px;
   line-height: 26px;
@@ -1000,7 +1033,6 @@ h1, h2, h3, h4 {
 .pagination-per-page {
   display: flex;
   align-items: center;
-  gap: 51px;
 }
 
 .pagination-text,
@@ -1014,6 +1046,7 @@ h1, h2, h3, h4 {
   height: 48px;
   width: 160px;
   padding-left: 13px;
+  margin-left: 51px;
   outline: 2px solid var(--grey);
   border-radius: 4px;
   box-sizing: border-box;
