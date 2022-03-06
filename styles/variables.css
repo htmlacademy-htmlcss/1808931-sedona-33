@@ -6,6 +6,7 @@
   --blue-light-20: rgba(131, 179, 211, 0.2);
   --blue-light-12: rgba(131, 179, 211, 0.12);
   --blue-dark: rgb(104, 162, 202);
+  --blue-dark-30: rgba(104, 162, 202, 0.3);
   --brown-light: rgb(117, 98, 87);
   --brown-light-30: rgba(117, 98, 87, 0.3);
   --brown: rgb(117, 97, 87);
@@ -28,9 +29,4 @@
   --star-space: 7px;
   --star: calc(var(--star-width) + var(--star-space));
   --star-block-width: calc(var(--star-width)*5 + var(--star-space)*4);
-
-  /*academy footer pic*/
-
-  --academy-pic: url(/images/academy/htmlacademy.svg);
-  --academy-pic-hover: url(/images/academy/htmlacademy-hover.svg);
 }
