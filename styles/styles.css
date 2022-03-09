@@ -134,60 +134,48 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
-.search-button {
-  min-width: 42px;
-  height: 65px;
-  padding: 0;
-  background-image: url(/images/interface/interface-search.svg);
-  background-color: var(--white);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border: none;
-}
-
-.search-button:hover {
-  background-image: url(/images/interface/interface-search-hover.svg);
-}
-
-.search-button:active {
-  background-image: url(/images/interface/interface-search-hover.svg);
-  opacity: 30%;
-}
-
-.bookmarks-button {
-  padding: 0;
-  min-width: 42px;
-  height: 65px;
-  background: url(/images/interface/interface-heart.svg) no-repeat 50% 50%;
-  border: none;
-}
-
-.bookmarks-button:hover {
-  background-image: url(/images/interface/interface-heart-hover.svg);
-}
-
-.bookmarks-button:active {
-  background-image: url(/images/interface/interface-heart-active.svg);
-  color: var(--white-30);
-}
-
-.bookmarks-button::after {
+.navigation-button {
   color: var(--white);
-  content: "12";
+  min-width: 42px;
+  height: 65px;
+  padding: 0;
+  padding-top: 3px;
+  background-color: var(--white);
+  border: none;
+}
+
+.navigation-svg {
+  fill: var(--black);
+}
+
+.navigation-button:hover .navigation-svg {
+  fill: var(--brown-light);
+}
+
+.navigation-button:active .navigation-svg {
+  fill: var(--brown-light-30);
+}
+
+.bookmarks-button::before {
+   content: "12";
   display: block;
   margin: 0;
   padding: 0;
   text-align: center;
-  position: relative;
-  top: -8px;
-  left: 25px;
+  position: absolute;
+  transform: translate(25px);
+  top: 15px;
   width: 20px;
   height: 20px;
   font-size: 10px;
   line-height: 21px;
   background-color: var(--green-light);
   background-position: 50% 50%;
-  border-radius: 90px;
+  border-radius: 50%;
+}
+
+.bookmarks-button:active {
+  color: var(--white-30);
 }
 
 .some-button {
@@ -1091,7 +1079,6 @@ h1, h2, h3, h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1105,59 +1092,27 @@ h1, h2, h3, h4 {
   display: block;
   height: 40px;
   width: 40px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   box-sizing: border-box;
 }
 
+.social-svg {
+  fill: var(--blue-light);
+  vertical-align:middle;
+}
+
+.social-link:hover .social-svg {
+
+  fill: var(--blue-dark);
+}
+
 .social-link:focus {
+  padding: 0px;
   border: 3px solid var(--blue-light);
   border-radius: 10px;
 }
 
-.twitter {
-  background-image: url(/images/social/social-tw.svg);
-  background-size: 18px 15px;
-}
-
-.twitter:hover {
-  background-image: url(/images/social/social-tw-hover.svg);
-}
-
-.twitter:active {
-  background-image: url(/images/social/social-tw-hover.svg);
-  opacity: 0.3;
-  border: none;
-}
-
-.facebook {
-  background-image: url(/images/social/social-fb.svg);
-  background-size: 10px 18px;
-}
-
-.facebook:hover {
-  background-image: url(/images/social/social-fb-hover.svg);
-}
-
-.facebook:active {
-  background-image: url(/images/social/social-fb-hover.svg);
-  opacity: 0.3;
-  border: none;
-}
-
-.youtube {
-  background-image: url(/images/social/social-yt.svg);
-  background-size:  20px 16px;
-}
-
-.youtube:hover {
-  background-image: url(/images/social/social-yt-hover.svg);
-}
-
-.youtube:active {
-  background-image: url(/images/social/social-yt-hover.svg);
-  opacity: 0.3;
-  border: none;
+.social-link:active .social-svg {
+  fill: var(--blue-dark-30);
 }
 
 .footer-contact {
@@ -1197,27 +1152,26 @@ h1, h2, h3, h4 {
   display: block;
   height: 70px;
   width: 160px;
-  background-image: url(/images/academy/htmlacademy.svg);
-  background-repeat: no-repeat;
-  background-size: 115px 34px;
-  background-position: 50% 50%;
   box-sizing: border-box;
 }
 
-.academy-link:hover {
-  background-image: var(--academy-pic-hover);
+.academy-svg {
+  padding-top: 17px;
+  vertical-align: middle;
+  fill: var(--black);
+}
+
+.academy-link:hover .academy-svg{
+  fill: var(--brown-light);
 }
 
 .academy-link:focus {
-  background-image: var(--academy-pic);
   border: 3px solid var(--blue-light);
   border-radius: 10px;
 }
 
-.academy-link:active {
-  background-image: var(--academy-pic-hover);
-  opacity: 0.3;
-  border: none;
+.academy-link:active .academy-svg{
+  fill: var(--brown-light-30);
 }
 
 /*footer end*/
