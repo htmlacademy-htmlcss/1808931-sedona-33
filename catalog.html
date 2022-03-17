@@ -291,5 +291,62 @@
         </a>
       </section>
     </footer>
+    <div class="modal-container visually-hidden">
+      <div class="modal">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="button-close" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть форму.</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="date-label-in modal-label" for="in-date">Дата заезда:</label>
+          <div class="modal-date-container">
+            <button type="button" class="input-date-button">
+              <span class="visually-hidden">Выберите дату.</span>
+            </button>
+            <input name="in-date" class="modal-input date-input-in" id="in-date" type="text" value="27 апреля 2020" placeholder="Укажите дату" required invalid>
+            <span class="date-check invalid-date-check">Мы не можем отправить вас в прошлое.</span>
+            <span class="date-check valid-date-check">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <label class="date-label-out modal-label" for="out-date">Дата выезда:</label>
+          <div class="modal-date-container">
+            <button type="button" class="input-date-button">
+              <span class="visually-hidden">Выберите дату.</span>
+            </button>
+            <input name="out-date" class="modal-input date-input-out" id="out-date" type="text" value="1 сентября 2021" placeholder="Укажите дату" required >
+            <span class="date-check invalid-date-check">Мы не можем отправить вас в прошлое.</span>
+            <span class="date-check valid-date-check">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <label class="count-label-grown modal-label" for="count-grown">Взрослые:</label>
+          <div class="modal-count-container">
+            <button type="button" class="count-button count-minus-button">
+              <span class="visually-hidden">Убрать человека.</span>
+            </button>
+            <input name="count-grown" class="modal-input count-input-grown" type="number" id="count-grown" value="2" required >
+            <button type="button" class="count-button count-plus-button">
+              <span class="visually-hidden">Добавить человека.</span>
+            </button>
+          </div>
+          <div class="count-label-kids-container">
+            <label class="modal-label count-label-kids" for="count-kids">Дети:</label>
+            <div class="tooltip" aria-labelledby="tooltip-label">
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </div>
+          </div>
+          <div class="modal-count-container">
+            <input name="count-kids" class="modal-input count-input-kids" type="number" id="count-kids" value="1">
+            <button type="button" class="count-button count-minus-button">
+              <span class="visually-hidden">Убрать ребенка.</span>
+            </button>
+            <button type="button" class="count-button count-plus-button">
+              <span class="visually-hidden">Добавить ребенка.</span>
+            </button>
+          </div>
+          <button class="modal-submit-button" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
