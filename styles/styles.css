@@ -657,12 +657,8 @@ h4 {
   margin: 0;
   padding: 0;
   border: none;
-  min-width: 200px;
-  margin-right: 17px;
-}
-
-.filter-infrastructure {
   width: 200px;
+  margin-right: 17px;
 }
 
 .filter-label {
