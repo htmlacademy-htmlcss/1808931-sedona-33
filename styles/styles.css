@@ -181,7 +181,7 @@ h4 {
   fill: var(--brown-light-30);
 }
 
-.bookmarks-button::before {
+.bookmarks-count {
   position: absolute;
   top: 15px;
   display: block;
@@ -1631,12 +1631,12 @@ h4 {
   padding-top: 4px;
 }
 
-.date-input-in ~ .invalid-date-check,
+.date-input-in/*:invalid*/ ~ .invalid-date-check, /*forcing invalid state*/
 .date-input-out:invalid ~ .invalid-date-check {
   display: block;
 }
 
-/*.date-input-in:valid ~ .valid-date-check:last-child,*/
+/*.date-input-in:valid ~ .valid-date-check:last-child,*/  /*removing valid state*/
 .date-input-out:valid ~ .valid-date-check:last-child {
   display: block;
 }
