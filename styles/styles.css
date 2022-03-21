@@ -307,6 +307,7 @@ h4 {
               url("../images/main/about-welcome-bottom.svg") no-repeat 0 429px,
               url("../images/main/about-background.jpg") no-repeat;
   background-size: 458px 352px, 100% 57px, cover;
+  background-color: var(--blue-light);
 }
 
 .about-container {
@@ -479,6 +480,7 @@ h4 {
   min-height: 411px;
   padding-top: 94px;
   background: url("../images/main/subscription-background.jpg") no-repeat;
+  background-color: var(--brown-light);
   background-size: cover;
   box-sizing: border-box;
 }
@@ -575,8 +577,8 @@ h4 {
   line-height: 23px;
   color: var(--white);
   min-height: 408px;
-  background-color: var(--black-30);
   background: url("../images/catalog/catalog-background.jpg") no-repeat;
+  background-color: var(--brown-light);
   background-size: cover;
   box-sizing: border-box;
 }
