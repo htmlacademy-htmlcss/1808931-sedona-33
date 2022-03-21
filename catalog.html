@@ -163,14 +163,14 @@
           </select>
         </div>
         <div class="result-display">
-          <h3 class="visually-hidden">Параметры вывода результатов.</h3>
-          <button type="button" name="display-tile" class="display-option-button display-tile" disabled>
+          <span id="display-options" class="visually-hidden">Внешний вид вывода результатов.</span>
+          <button type="button" name="display-tile" class="display-option-button display-tile" aria-labelledby="display-options" disabled>
             <span class="visually-hidden">Плитка.</span>
           </button>
-          <button type="button" name="display-slideshow" class="display-option-button display-slideshow">
+          <button type="button" name="display-slideshow" class="display-option-button display-slideshow" aria-labelledby="display-options">
             <span class="visually-hidden">Слайдшоу.</span>
           </button>
-          <button type="button" name="display-list" class="display-option-button display-list">
+          <button type="button" name="display-list" class="display-option-button display-list" aria-labelledby="display-options">
             <span class="visually-hidden">Список.</span>
           </button>
         </div>
