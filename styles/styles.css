@@ -181,7 +181,7 @@ h4 {
   fill: var(--brown-light-30);
 }
 
-.bookmarks-button::before {
+.bookmarks-count {
   position: absolute;
   top: 15px;
   display: block;
