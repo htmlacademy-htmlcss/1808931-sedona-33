@@ -154,8 +154,8 @@
         <h2 class="visually-hidden">Результаты поиска.</h2>
         <span class="result-number title-small">Найдено гостиниц: 38</span>
         <div class="result-order">
-          <h3 class="visually-hidden">Порядок вывода результатов.</h3>
-          <select name="result-order-select select-control" id="result-order" class="result-order-select select-control">
+          <label for="result-order-select" class="visually-hidden">Порядок вывода результатов.</label>
+          <select name="result-order-select select-control" id="result-order-select" class="result-order-select select-control">
             <option value="price-low" selected>Сначала дешёвые</option>
             <option value="price-high">Сначала дорогие</option>
             <option value="rating">По рейтингу</option>
@@ -259,8 +259,8 @@
             <button type="button" class="pagination-button">10<span class="visually-hidden">страница.</span></button>
           </div>
           <div class="pagination-per-page">
-            <h3 class="pagination-text">Гостиниц на странице:</h3>
-            <select class="pagination-select select-control" name="results-pagination-select">
+            <label for="pagination-select" class="pagination-text">Результатов на странице:</label>
+            <select id="pagination-select" class="pagination-select select-control" name="results-pagination-select">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
