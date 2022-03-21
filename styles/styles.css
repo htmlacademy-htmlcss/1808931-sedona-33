@@ -1124,12 +1124,15 @@ h4 {
   color: var(--brown-light-30);
 }
 
+.result-info {
+  margin-bottom: 16px;
+}
+
 .result-accommodation,
 .result-price_range {
   display: inline-block;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 16px;
 }
 
 .result-accommodation {
