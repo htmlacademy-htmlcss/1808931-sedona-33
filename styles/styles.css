@@ -5,6 +5,64 @@
 * Browsers: > 2% and last 1 version
 */
 
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+}
+
+
+:root {
+  /*colors*/
+
+  --blue-light: rgb(131, 179, 211);
+  --blue-light-30: rgba(131, 179, 211, 0.3);
+  --blue-light-20: rgba(131, 179, 211, 0.2);
+  --blue-light-12: rgba(131, 179, 211, 0.12);
+  --blue-dark: rgb(104, 162, 202);
+  --blue-dark-30: rgba(104, 162, 202, 0.3);
+  --blue-input: rgb(63, 94, 114);
+  --brown-light: rgb(117, 98, 87);
+  --brown-light-30: rgba(117, 98, 87, 0.3);
+  --brown: rgb(117, 97, 87);
+  --brown-dark: rgb(97, 80, 72);
+  --green-light: rgb(125, 181, 80);
+  --green: rgb(125, 181, 79);
+  --green-dark: rgb(108, 158, 66);
+  --white: rgb(255, 255, 255);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --white-30: rgba(255, 255, 255, 0.3);
+  --black: rgb(0, 0, 0);
+  --black-60: rgba(0, 0, 0, 0.6);
+  --black-40: rgba(0, 0, 0, 0.4);
+  --black-30: rgba(0, 0, 0, 0.3);
+  --black-25: rgba(0, 0, 0, 0.25);
+  --black-15: rgba(0, 0, 0, 0.15);
+  --dark: rgb(51, 51, 51);
+  --grey: rgb(229, 229, 229); /*  #E6E6E6 */
+  --grey-light: rgb(242, 242, 242);
+  --grey-light-80: rgba(242, 242, 242, 0.8);
+  --grey-dark: rgb(150, 150, 150);
+  --error-red: rgb(255, 87, 87);
+
+  /*star rating*/
+
+  --star-url: url(../images/interface/interface-star.svg);
+  --star-width: 18px;
+  --star-space: 7px;
+  --star: calc(var(--star-width) + var(--star-space));
+  --star-block-width: calc(var(--star-width) * 5 + var(--star-space) * 4);
+}
+
+
 html,
 body {
   height: 100%;
@@ -205,7 +263,7 @@ h4 {
 
 .some-button {
   width: 160px;
-  padding: 0;
+  padding: 5px 20px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -245,10 +303,11 @@ h4 {
 
 .about-banner {
   height: 485px;
-  background: url("/images/main/about-welcome.svg") no-repeat 50% 51px,
-              url("/images/main/about-welcome-bottom.svg") no-repeat 0 100%,
-              url("/images/main/about-background.jpg") no-repeat;
+  background: url("../images/main/about-welcome.svg") no-repeat 50% 51px,
+              url("../images/main/about-welcome-bottom.svg") no-repeat 0 429px,
+              url("../images/main/about-background.jpg") no-repeat;
   background-size: 458px 352px, 100% 57px, cover;
+  background-color: var(--blue-light);
 }
 
 .about-container {
@@ -342,17 +401,17 @@ h4 {
 }
 
 .advantages-card-housing .sub-item-title::before {
-  background-image: url("/images/main/feature/town-home.svg");
+  background-image: url("../images/main/feature/town-home.svg");
   background-size: 75px 72px;
 }
 
 .advantages-card-food .sub-item-title::before {
-  background-image: url("/images/main/feature/town-food.svg");
+  background-image: url("../images/main/feature/town-food.svg");
   background-size: 74px 70px;
 }
 
 .advantages-card-souvenir .sub-item-title::before {
-  background-image: url("/images/main/feature/town-souvenir.svg");
+  background-image: url("../images/main/feature/town-souvenir.svg");
   background-size: 64px 76px;
 }
 
@@ -386,8 +445,8 @@ h4 {
 }
 
 .main-hotel-button {
-  height: 60px;
-  padding: 0;
+  min-height: 60px;
+  padding: 5px 20px;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
@@ -420,7 +479,8 @@ h4 {
   color: var(--white);
   min-height: 411px;
   padding-top: 94px;
-  background: url("/images/main/subscription-background.jpg") no-repeat;
+  background: url("../images/main/subscription-background.jpg") no-repeat;
+  background-color: var(--brown-light);
   background-size: cover;
   box-sizing: border-box;
 }
@@ -439,7 +499,7 @@ h4 {
 .subscription-form {
   display: flex;
   justify-content: center;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .subscription-email-input {
@@ -477,7 +537,7 @@ h4 {
 
 .subscription-button {
   margin: 0;
-  padding: 0;
+  padding: 5px 20px;
   font-family: inherit;
   font-size: 20px;
   line-height: 26px;
@@ -517,8 +577,8 @@ h4 {
   line-height: 23px;
   color: var(--white);
   min-height: 408px;
-  background: url("/images/catalog/catalog-background.jpg") no-repeat;
-  background-color: var(--black-30);
+  background: url("../images/catalog/catalog-background.jpg") no-repeat;
+  background-color: var(--brown-light);
   background-size: cover;
   box-sizing: border-box;
 }
@@ -546,7 +606,7 @@ h4 {
   display: block;
   width: 5px;
   content: "";
-  background: url("/images/interface/interface-breadcrumb-arrow.svg") no-repeat 50% 50%;
+  background: url("../images/interface/interface-breadcrumb-arrow.svg") no-repeat 50% 50%;
   margin-left: 6px;
   margin-right: 5px;
 }
@@ -577,7 +637,7 @@ h4 {
   display: block;
   width: 25px;
   height: 24px;
-  background: url("/images/interface/interface-home.svg") no-repeat 50% 50%;
+  background: url("../images/interface/interface-home.svg") no-repeat 50% 50%;
   box-sizing: border-box;
 }
 
@@ -597,12 +657,8 @@ h4 {
   margin: 0;
   padding: 0;
   border: none;
-  min-width: 200px;
-  margin-right: 17px;
-}
-
-.filter-infrastructure {
   width: 200px;
+  margin-right: 17px;
 }
 
 .filter-label {
@@ -627,7 +683,7 @@ h4 {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url("/images/interface/interface-tick.svg");
+  background-image: url("../images/interface/interface-tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 12px 10px;
@@ -840,7 +896,7 @@ h4 {
 }
 
 .filter-submit-button {
-  padding: 0;
+  padding: 5px 20px;
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -872,7 +928,7 @@ h4 {
 }
 
 .filter-reset-button {
-  padding: 0;
+  padding: 5px 10px;
   font-family: inherit;
   font-size: 18px;
   line-height: 23px;
@@ -920,7 +976,7 @@ h4 {
   font-size: 18px;
   line-height: 23px;
   background-color: transparent;
-  background-image: url("/images/interface/interface-down.svg");
+  background-image: url("../images/interface/interface-down.svg");
   background-repeat: no-repeat;
   background-size: 12px 7px;
   background-position: right 20px top 20px;
@@ -996,15 +1052,15 @@ h4 {
 }
 
 .display-tile {
-  background-image: url("/images/catalog/display/display-tile.svg");
+  background-image: url("../images/catalog/display/display-tile.svg");
 }
 
 .display-slideshow {
-  background-image: url("/images/catalog/display/display-slideshow.svg");
+  background-image: url("../images/catalog/display/display-slideshow.svg");
 }
 
 .display-list {
-  background-image: url("/images/catalog/display/display-list.svg");
+  background-image: url("../images/catalog/display/display-list.svg");
 }
 
 .result-list {
@@ -1068,12 +1124,15 @@ h4 {
   color: var(--brown-light-30);
 }
 
+.result-info {
+  margin-bottom: 16px;
+}
+
 .result-accommodation,
 .result-price_range {
   display: inline-block;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 16px;
 }
 
 .result-accommodation {
@@ -1083,7 +1142,7 @@ h4 {
 
 .result-details-button,
 .result-favorites-button {
-  padding: 0;
+  padding: 5px 10px;
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -1099,7 +1158,7 @@ h4 {
 .result-details-button {
   background-color: var(--brown-light);
   min-height: 37px;
-  min-width: 133px;
+  width: 133px;
   margin-right: auto;
 }
 
@@ -1120,7 +1179,7 @@ h4 {
 .result-favorites-button {
   background-color: var(--blue-light);
   min-height: 37px;
-  min-width: 141px;
+  width: 141px;
 }
 
 .result-favorites-button:hover {
@@ -1204,12 +1263,13 @@ h4 {
 }
 
 .result-rating {
+  padding: 5px 10px;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
   background-color: var(--grey-light);
   border-radius: 4px;
-  min-width: 160px;
+  width: 160px;
   min-height: 37px;
   text-transform: uppercase;
   padding-top: 9px;
@@ -1224,7 +1284,7 @@ h4 {
 }
 
 .result-more-button {
-  padding: 0;
+  padding: 5px 32px;
   font-family: inherit;
   font-size: 20px;
   line-height: 26px;
@@ -1267,7 +1327,7 @@ h4 {
 }
 
 .pagination-button {
-  padding: 0;
+  padding: 5px 10px;
   font-family: inherit;
   font-size: 20px;
   line-height: 26px;
@@ -1616,7 +1676,7 @@ h4 {
   height: 15px;
   background-color: transparent;
   border: none;
-  background-image: url("/images/interface/interface-date.svg");
+  background-image: url("../images/interface/interface-date.svg");
   background-size: 15px 15px;
   box-sizing: border-box;
   transform: translateX(-32px);
@@ -1747,7 +1807,7 @@ h4 {
   height: 25px;
   background-color: var(--blue-light);
   border-radius: 50%;
-  background-image: url("/images/interface/interface-tooltip.svg");
+  background-image: url("../images/interface/interface-tooltip.svg");
   background-size: 1px 9px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1780,7 +1840,7 @@ h4 {
   width: 19px;
   height: 9px;
   content: "";
-  background-image: url("/images/interface/interface-tooltip-arrow.svg");
+  background-image: url("../images/interface/interface-tooltip-arrow.svg");
   transform: translateX(-50%);
 }
 
