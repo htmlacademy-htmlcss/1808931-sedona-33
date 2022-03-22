@@ -480,6 +480,7 @@ h4 {
   color: var(--white);
   min-height: 411px;
   padding-top: 94px;
+  padding-bottom: 90px;
   background: url("../images/main/subscription-background.jpg") no-repeat;
   background-color: var(--brown-light);
   background-size: cover;
@@ -500,7 +501,6 @@ h4 {
 .subscription-form {
   display: flex;
   justify-content: center;
-  padding-bottom: 90px;
 }
 
 .subscription-email-input {
