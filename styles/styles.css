@@ -72,12 +72,14 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: var(--black);
-  background-color: var(--white);
   flex-direction: column;
+  background-color: var(--grey);
+  box-shadow: 0 0 15px var(--black-20);
 }
 
 .main-container {
   flex-grow: 1;
+  background-color: var(--white);
 }
 
 .visually-hidden {
@@ -130,6 +132,10 @@ h4 {
 /*titles end*/
 
 /*header start*/
+
+.page-header {
+  background-color: var(--white);
+}
 
 .navigation {
   display: flex;
@@ -1424,6 +1430,7 @@ h4 {
   align-items: center;
   min-height: 120px;
   box-sizing: border-box;
+  background-color: var(--white);
 }
 
 .footer-social-list {
