@@ -45,6 +45,7 @@
   --black-40: rgba(0, 0, 0, 0.4);
   --black-30: rgba(0, 0, 0, 0.3);
   --black-25: rgba(0, 0, 0, 0.25);
+  --black-20: rgba(0, 0, 0, 0.2);
   --black-15: rgba(0, 0, 0, 0.15);
   --dark: rgb(51, 51, 51);
   --grey: rgb(229, 229, 229); /*  #E6E6E6 */
@@ -55,7 +56,7 @@
 
   /*star rating*/
 
-  --star-url: url(../images/interface/interface-star.svg);
+  --star-url: url("../images/interface/interface-star.svg");
   --star-width: 18px;
   --star-space: 7px;
   --star: calc(var(--star-width) + var(--star-space));
