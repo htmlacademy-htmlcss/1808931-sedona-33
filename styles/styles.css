@@ -1088,7 +1088,7 @@ h4 {
 .result-link {
   display: block;
   width: 300px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   text-decoration: none;
   outline: none;
 }
@@ -1097,7 +1097,7 @@ h4 {
   margin: 0%;
   padding: 0%;
   object-fit: cover;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 .result-image:hover {
@@ -1115,6 +1115,7 @@ h4 {
 .result-title {
   width: 100%;
   color: var(--black);
+  line-height: 31px;
 }
 
 .result-link:hover .result-title {
