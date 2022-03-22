@@ -91,7 +91,7 @@ body {
   border: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -982,7 +982,7 @@ h4 {
   background-size: 12px 7px;
   background-position: right 20px top 20px;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .results {
